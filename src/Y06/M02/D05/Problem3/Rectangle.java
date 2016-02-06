@@ -6,9 +6,27 @@ package Y06.M02.D05.Problem3;
 public class Rectangle {
     Line line1,line2,line3,line4;
     Rectangle(Line newLine1, Line newLine2, Line newLine3, Line newLine4) {
-        // (newLine1.point2.equal(newLine2.point1) && newLine2.point2.equal(newLine3.point1) && newLine3.point2.equal(newLine4.point1) && newLine4.point2.equal(newLine1.point1) // To check whether Point is correct pattern or not
-        // (newLine1.length() == newLine3.length()) && (newLine2.length() == newLine4.length()) // To check both of each 2 side is parallel lines.
-        if(newLine1.point2.equal(newLine2.point1) && newLine2.point2.equal(newLine3.point1) && newLine3.point2.equal(newLine4.point1) && newLine4.point2.equal(newLine1.point1) && (newLine1.length() == newLine3.length()) && (newLine2.length() == newLine4.length())) {
+        /* To check whether Point is correct pattern or not.
+
+           newLine1.point2.equal(newLine2.point1) &&
+           newLine2.point2.equal(newLine3.point1) &&
+           newLine3.point2.equal(newLine4.point1) &&
+           newLine4.point2.equal(newLine1.point1)
+
+         */
+        /*  To check both of each 2 side is parallel lines.
+
+            newLine1.length() == newLine3.length() &&
+            newLine2.length() == newLine4.length()
+
+         */
+        if(newLine1.point2.equal(newLine2.point1) &&
+           newLine2.point2.equal(newLine3.point1) &&
+           newLine3.point2.equal(newLine4.point1) &&
+           newLine4.point2.equal(newLine1.point1) &&
+           newLine1.length() == newLine3.length() &&
+           newLine2.length() == newLine4.length()
+           ) {
             this.line1 = newLine1;
             this.line2 = newLine2;
             this.line3 = newLine3;
